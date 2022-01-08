@@ -1,7 +1,16 @@
-{% layout 'html.liquid' %}
-{%header content: title | capitalize%}
-<ul>
-  {% for todo in todos %}
-    {% render 'todo.liquid' with todo, index: forloop.index%}
-  {% endfor %}
-</ul>
+{% capture xx %}
+# Top level section
+
+yeah it looks good
+
+hello
+{% endcapture %}
+{% capture yy %}
+# A Second section
+
+still good
+{% endcapture %}
+{% capture zzz %}
+something
+{% endcapture %}
+{% include 'oogi.liquid' %}
